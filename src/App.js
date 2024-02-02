@@ -13,11 +13,14 @@ function App() {
       <header>
         <MyNav />
       </header>
-      {/* <main>
+      <main>
+        {/* MyMain per la Home */}
         <MyMain />
-      </main> */}
-      {/* <User /> */}
-      <Settings />
+        {/* User per la pagina utente */}
+        {/* <User /> */}
+        {/* Settings per la pagina Impostazioni */}
+        {/* <Settings /> */}
+      </main>
       <footer>
         <MyFooter />
       </footer>
