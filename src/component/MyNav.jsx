@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from "react-router-dom"
 
 const MyNav = function() {
   return (
@@ -11,11 +12,11 @@ const MyNav = function() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" >
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#tvshows">TV Shows</Nav.Link>
-            <Nav.Link href="#movies">Movies</Nav.Link>
-            <Nav.Link href="#newest">Recently Added</Nav.Link>
-            <Nav.Link href="#mylist">My List</Nav.Link>
+            <Link className='nav-link' to="/">Home</Link>
+            <Link className='nav-link' to="/tv-shows">TV Shows</Link>
+            <Link className='nav-link' to="/">Movies</Link>
+            <Link className='nav-link' to="/">Recently Added</Link>
+            <Link className='nav-link' to="/">My List</Link>
           </Nav>
           <Nav className='d-flex align-items-center'>
             <Nav.Link href="#search"><i className="bi bi-search"></i></Nav.Link>
@@ -23,10 +24,14 @@ const MyNav = function() {
             <Nav.Link eventKey={2} href="#memes">
             <i className="bi bi-bell-fill"></i>
             </Nav.Link>
-            <NavDropdown title={<img src='avatar.png' alt='avatar-logo' style={{width: "2.4em"}}/>} id="nav-dropdown">
-              <NavDropdown.Item eventKey="4.1">Edit Profile</NavDropdown.Item>
+            <NavDropdown className='dropleft' title={<img src='avatar.png' alt='avatar-logo' style={{width: "2.4em"}}/>} id="nav-dropdown">
+              <Link className='dropdown-item' to="/user">
+                  Edit Profile
+              </Link>
               <NavDropdown.Divider />
-              <NavDropdown.Item eventKey="4.2">Impostation</NavDropdown.Item>
+              <Link className='dropdown-item' to="/settings">
+                  Settings
+              </Link>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
