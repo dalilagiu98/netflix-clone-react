@@ -8,7 +8,7 @@ const MyNav = function() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
       <Container fluid>
-       <img src='logo.png' alt='logo netflix' style={{width: "6em"}}/>
+       <img src='\logo.png' alt='logo netflix' style={{width: "6em"}}/>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" >
           <Nav className="me-auto">

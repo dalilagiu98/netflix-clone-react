@@ -10,7 +10,7 @@ class ItemGallery extends Component {
                     console.log("il film è:", movie)
                     return (   
                         <Col xs={6} md={3} lg={2} key={movie.imdbID}>
-                            <Link to={"/detail/" + movie.imdbID}>
+                            <Link to={"/details/" + movie.imdbID}>
                             <div className="w-100 h-100">
                                 <img src={movie.Poster} alt="poster movie" className="w-100 h-100"/>
                             </div>     

@@ -33,14 +33,14 @@ const User = function () {
                 <div className="p-3">
                     <h3 className="fs-5 mt-1 fw-normal">Autoplay controls</h3>
                     <div>
-                    <input type="checkbox" id="next" name="scales" checked />
-                    <label for="next"
+                    <input type="checkbox" id="next" name="scales"  />
+                    <label htmlFor="next"
                         >Autoplay next episode in a series on all devices.</label
                     >
                     </div>
                     <div>
-                    <input type="checkbox" id="preview" name="scales" checked />
-                    <label for="preview"
+                    <input type="checkbox" id="preview" name="scales"  />
+                    <label htmlFor="preview"
                         >Autoplay previews while browsing on all devices.</label
                     >
                     </div>
